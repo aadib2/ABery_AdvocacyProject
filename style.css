@@ -41,6 +41,13 @@ ul.no-bullets {
   font-family: sans-serif;
 }
 
+#intro-container {
+  display:flex;
+  flex-direction:row;
+  background-color: honeydew;
+  border: 10px solid mediumseagreen;
+}
+
 #sub-header {
   color: slateblue;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -86,11 +93,13 @@ ul.no-bullets {
 .text_styling {
   color: navy;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 2.5;
 }
 
 .text_styling2 {
   color: teal;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 2
 }
 
 .body-styling{
@@ -228,6 +237,10 @@ ul.no-bullets {
   }
 
   .header-container {
+    background-color: lightsteelblue;
+  }
+
+  #intro-container {
     background-color: lightsteelblue;
   }
 }
