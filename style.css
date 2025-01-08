@@ -5,6 +5,11 @@ html {
 
 body {
   background-color: lightcyan;
+  /*background-image: url('https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?cs=srgb&dl=pexels-akos-szabo-145938-440731.jpg&fm=jpg')*/
+}
+
+a{
+  text-decoration: none;
 }
 
 ul.no-bullets {
@@ -13,16 +18,6 @@ ul.no-bullets {
   margin: 0; /* Remove margins */
 }
 
-.header-container {
-  display: flex;
-  background-color: honeydew;
-  flex-direction: row;
-  align-items: flex-end;
-  margin: 10px;
-  margin-top: 60px;
-  padding: 10px;
-  
-}
 
 .header-item {
   font-size: 30px;
@@ -48,7 +43,15 @@ ul.no-bullets {
   border: 10px solid mediumseagreen;
 }
 
-#sub-header {
+.text-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background-color: honeydew;
+  border: 5px solid #346893;
+}
+
+.sub-header {
   color: slateblue;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -67,12 +70,10 @@ ul.no-bullets {
 #img_style1
 {
   position: relative;  
-  left: 20px; 
-  top: 5px;
   width: 400px; 
   height: 240px;
   padding: 10px;
-  margin: 5px;
+  margin: 10px;
 }
 
 #img_style2
@@ -80,7 +81,7 @@ ul.no-bullets {
   width:400px;
   height: 240px;
   padding: 10px;
-  margin: 5x;
+  margin: 5px;
 }
 
 #img_style3 {
@@ -88,12 +89,25 @@ ul.no-bullets {
   height: 50px;
 }
 
+#icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.why-container-title {
+  padding: 10px;
+}
+
 
 
 .text_styling {
   color: navy;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   line-height: 2.5;
+  font-size: 18px;
 }
 
 .text_styling2 {
@@ -108,28 +122,29 @@ ul.no-bullets {
 }
 
 .btn {
-  background-color: seagreen;
+  background-color: #7dbfab;
   border: 3px solid darkblue;
   color: white;
-  padding: 15px 32px;
+  padding: 15px 30px;
   text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 20px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 10px 2px;
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 20px;
 }
 
 #theme-button {
-  background-color: aliceblue;
   border: 3px solid darkblue;
-  color: darkcyan;
-  padding: 15px 32px;
+  background-color: #7dbfab;
+  color: white;
+  padding: 10px 18px;
   margin-left: 40px;
+  font-size: 20px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-align: center;
-  font-size: 16px;
-  font-family: sans-serif;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 20px;
   
 }
 
@@ -146,28 +161,43 @@ ul.no-bullets {
 }
 
 .footer {
-  position: sticky;
-  left: 0;
-  bottom: 0;
+  font-size: 20px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   width: 100%;
   background-color: azure;
   color: navy;
   
 }
 
-.navbar {
-  margin: 10px;
-  padding: 10px;
+header {
+  background-color: mintcream;
 }
+
+header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.navbar .nav-logo .logo-text {
+  font-weight: bold;
+  color: darkcyan;
+  font-size: 35px;
+  margin-left: 20px;
+}
+
+.navbar .nav-menu {
+  display: flex;
+  gap: 10px;
+  margin-right: 20px;
+}
+
 
 /* General style rule set for all items in ul */
 .navbar ul {
-    background-color: mintcream;
     list-style-type: none;
     overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
     margin-bottom: 5px;
     z-index: 1;
 
@@ -176,7 +206,12 @@ ul.no-bullets {
 /* Style rule set for individual li */
 .navbar ul li {
     float: left;
-    margin: 10px;
+    margin: 8px;
+    padding: 10px 16px;
+    background-color: #7dbfab;
+    border-radius: 20px;
+  
+    
 }
 
 
@@ -184,7 +219,7 @@ ul.no-bullets {
 .navbar ul li a {
     display: block;
     text-decoration: none;
-    color: seagreen;
+    color: white;
     font-size: 20px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: left;
@@ -193,7 +228,8 @@ ul.no-bullets {
 
 /* Style rule set for hovered link */
 .navbar ul li a:hover {
-    font-weight: bold;
+   color: blue;
+   cursor:pointer;
 }
 
 .petition-container {
@@ -232,16 +268,30 @@ ul.no-bullets {
     color: white;
   }
 
-  .navbar ul {
+  .navbar {
     background-color:lightsteelblue;
   }
 
-  .header-container {
-    background-color: lightsteelblue;
-  }
 
   #intro-container {
     background-color: lightsteelblue;
+    border-color: #174f7d;
+  }
+
+  .text_styling2 {
+    color: white;
+  }
+
+  .footer {
+    background-color: lightsteelblue;
+  }
+
+  .text-container{
+    background-color: lightsteelblue;
+  }
+
+  #related-sites ul li a {
+    color: white;
   }
 }
 
@@ -300,5 +350,30 @@ ul.no-bullets {
   align-items: center;
   justify-content: center;
 }
+
+ul li a {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#footer-title {
+  text-align: center;
+  font-weight: bold;
+  color: darkcyan;
+  margin-top: 15px;
+}
+
+#text_styling_footer {
+  color: navy;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  line-height: 2.5;
+  text-align: center;
+  font-size: 14px;
+}
+
+#why-containers ul li {
+  margin: 10px;
+}
+
+
 
  
