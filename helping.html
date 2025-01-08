@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+<body>
+  <!-- Header/Navbar -->
+  <header>
+
+    <nav class="navbar">
+      <a href="#" class = "nav-logo">
+        <h2 class = "logo-text"> Protecting Our Planet 🌎</h2>
+      </a>
+      <ul class = "nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="thewhy.html"> The Why</a></li>
+        <li><a href="envcauses.html"> Environmental Causes and Impact</a></li>
+        <li><a href="helping.html"> How Can I Help?</a></li>
+        <li><a href="contactinfo.html"> Contact Us!</a></li>
+        <!-- Toggle dark mode button -->
+        <button id="theme-button">Toggle Dark Mode</button></div>
+        <!-- Stretch Challenge: Drop Down-->
+      </ul>
+    </nav>
+  </header>
+
+  <div id = "help-part" class = "body-styling">
+    <h2 id = "sub-header2"> How can you help? </h2>
+    <ol>
+      <li> <h3 class = "sub-header"> Contributing to Water Conservation </h3></li>
+        <ul class = "text_styling">
+          <li> Put a large bottle of tap water in the fridge to save waiting for the tap to run cold</li>
+          <li> Put your dish-washer and washing machine on with full loads and an eco setting if possible</li>
+          <li> Turn the tap off while brushing your teeth</li>
+          <li> Take shorter showers instead of bathing</li>
+          <li> Install water-efficient taps and showers to minimize heating water</li>
+        </ul>
+      <li> <h3 class = "sub-header"> Contributing to Waste Reduction </h3> </li>
+        <ul class = "text_styling">
+          <li> Use a reusable water bottle/cup and grocery bags </li>
+          <li> Purchase wisely and recycle products that can be recycled based off programs in your area</li>
+          <li> Compost! Your fruit and vegetable scraps, egg shells, coffee grounds, grass clippings and leaves can all be composted</li>
+          <li> Avoid single use food and drink containers/utensils</li>
+          <li> Shop local farmers markets and buy in bulk to reduce packaging and waste</li>
+        </ul>
+      <li> <h3 class = "sub-header"> Contributing to Reforestation </h3></li>
+        <ul class = "text_styling">
+          <li> As simple as planting a tree if you have a garden or small patch of land. Every tree matters</li>
+          <li> Donate to organizations and tree planting projects like Just One Tree, Amazon Watch, and Conservation International</li>
+          <li> Volunteer with local orgs that plant trees!</li>
+        </ul>
+      <li> <h3 class = "sub-header"> Contributing to Ocean Cleanup</li>
+        <ul class = "text_styling">
+          <li> Dispose of trash properly rather than carelessly and reduce, reuse, and recycle whenever possible </li>
+          <li> Organize or participate in beach, riverbank, or land cleanups with friends, family, and neighbors</li>
+          <li> Make a donation to The Ocean Cleanup</li>
+        </ul>
+    </ol>    
+  </div>
+
+  <div class="petition body-styling" id="petition">
+
+      <h2 id = "sub-header3">Sign Our Petition 📢</h2>
+      <div class="petition-container">
+
+        <div class = "petition-para">
+          <p class = "text_styling2"> Our polar icecaps in the Arctic are melting at an alarming rate due to the effects of climate change and it has had detrimental impacts on our environment and ecosystems. It has added to rising sea levels, affected temperatures due to less reflected heat, and caused trouble for polar bears, walruses, arctic foxes, snowy owls, reindeer, and many other species as well as the ones that depend on them. As permafrost thaws, the methane it stores is released, causing more warming. We need your help to take greater action on the Arctic! Earth cannot wait until 2030 to take action. We ask that you sign this petition to call for the United Nations to take stricter climate action and protect our Arctic ecosystems.</p>
+        </div>
+
+        <div id="signatures" class = "text_styling">
+          <p>🖊️ MJ from San Diego supports this.</p>
+          <p>🖊️ Alexander from Munich supports this.</p>
+          <p>🖊️ Teresa from Seattle supports this.</p>
+          <p id = "counter"> 🖊️ 3 people have signed this petition and support this cause.</p>
+        </div>
+
+      </div>
+
+    <!--- Sign Petition Form --->
+    <form id="sign-petition" title="sign-petition" class = "text_styling">
+      <!-- inputs go here -->
+      <label for = "name"> Name:</label>
+      <input type = "text" id = "name">
+      <label for = "hometown"> Hometown:</label>
+      <input type = "text" id = "hometown">
+      <label for = "email"> Email:</label>
+      <input type = "text" id = "email">
+    </form>
+
+     <!--- Sign Now Button --->
+    <button id="sign-now-button">Sign Now</button>
+
+  </div>
+
+  <div id="thanks-modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div id="modal-text-container">
+        <!-- text here -->
+        <p id = thanks-modal-content> Here is some text! </p>
+        <!-- button here (stretch feature) -->
+      </div>
+      <!-- image here-->
+      <img id = "modal-image" src = "https://i.pinimg.com/736x/66/ad/4b/66ad4bd93a6dfbf0b12a2e75f383065b.jpg" alt = "Thank you image">
+      </div>
+
+    </div>
+
+    <div class="footer"> 
+      <h3 id = "footer-title"> Protecting Our 🌎</h3>
+      <div id = "icons">
+        <img src = "https://static.vecteezy.com/system/resources/previews/016/716/465/non_2x/gmail-icon-free-png.png" alt = "gmail" id = "img_style3">
+        <img src = "https://static.vecteezy.com/system/resources/previews/018/930/413/non_2x/instagram-logo-instagram-icon-transparent-free-png.png" alt = "insta" id = "img_style3">
+        <img src="https://static.vecteezy.com/system/resources/previews/042/148/611/non_2x/new-twitter-x-logo-twitter-icon-x-social-media-icon-free-png.png" alt = "twitter" id = "img_style3">
+      </div>
+      <p id = "text_styling_footer"> Copyright @2024; Designed by Aadi Bery</p>
+    </div>
+
+
+  <script src="index.js"></script> 
+</body>
+</html>
